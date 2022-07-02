@@ -1,0 +1,270 @@
+.container{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to top, #f77162f1 0%, #fe519669 100%);
+}
+
+.header__main{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.header__img{
+    width: 45%;
+    text-align: center;
+    margin: 0;
+}
+
+.header__picture{
+    max-width: 100%;
+}
+
+.header__texts{
+    width: 45%;
+    color: #f3f3f3;
+}
+
+.header__title{
+    font-size: 5rem;
+}
+
+.header__paragraph{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+.title{
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 40px;
+    color: var(--color-primary);
+    text-align: var(--align-title);
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.about__texts{
+    width: 100%;
+   text-align: center;
+}
+
+.about__paragraph{
+    font-size: 2rem;
+}
+
+
+
+.productos{
+    background: #f3f3f3
+}
+
+.productos__cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 700px;
+    gap: 30px
+}
+
+.productos__card{
+    background: #fff;
+    height: auto;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productos__picture{
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 400px;
+    object-fit: cover;
+}
+
+.productos__texts{
+    padding: 30px 20px 40px;
+}
+
+.productos__title{
+    font-size: 2rem;
+    text-align: center;
+    color: #1b998b;
+    margin: 0;
+}
+
+.productos__paragraph{
+    font-weight: 300;
+    margin: 30px 0;
+    font-size: 1.5rem;
+}
+
+.productos__cta{
+    display: block;
+    background: #1b998b;
+    padding: 8px;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+.footer{
+    background: #f77062;
+    color: #fff;
+    text-align: center;
+}
+
+.footer__container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__texts{
+    width: 50%;
+}
+
+.footer__icon{
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid ;
+    border-radius: 50%;
+    
+}
+
+.footer__icon.fab{
+    line-height: 60px;
+}
+
+.footer__icon:hover{
+    background: #fff;
+    color: #f77062;
+    cursor: pointer;
+}
+
+.footer__link{
+    display: inline-block;
+    color: #fff;
+    margin: 0 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer__link:hover{
+    text-decoration: none;
+}
+
+.footer__img{
+    width: 35%;
+}
+
+.footer__picture{
+    width: 90%;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        height: auto;
+        min-height: 50vh;
+        padding: 40px 0;
+    }
+
+    .header__main{
+        justify-content: center;
+    }
+
+    .header__img{
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .header__picture{
+        max-width: 85%;
+    }
+
+    .header__texts{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__title{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+
+    .about__texts{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    .about__paragraph{
+        text-align: left;
+    }
+
+
+    .productos__card{
+        margin-bottom: 30px;
+    }
+
+    .header__picture{
+        display: none;
+    }
+ 
+
+
+    .footer__container{
+        flex-direction: column;
+    }
+
+    .footer__img{
+        order: -1;
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .footer__picture{
+        width: 100%;
+    }
+
+    .footer__texts{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .productos__card{
+        width: 95%;
+    }}
